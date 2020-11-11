@@ -21,6 +21,7 @@ body{
 nav{
     flex: 1;
     text-align: right;
+    padding-bottom: 25px;
 }
 
 nav ul{
@@ -88,6 +89,7 @@ p{
 
 .header{
     background:radial-gradient(#fff,#ffd6d6);
+    padding-top: 20px;
 }
 
 .cart-img{
@@ -361,6 +363,23 @@ ul{
         cursor: pointer;
     }
 
+    .single-product .row{
+        text-align: left;
+    }
+
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+     .related-product{
+        margin-top: 180px;
+    }
+
 }
 
 /* Media Query for less than 600px screen */
@@ -374,4 +393,193 @@ ul{
     .col-2, .col-3, .col-4{
         flex-basis: 100%;
     }
+
+    .single-product .row{
+        text-align: left;
+    }
+
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+     .related-product{
+        margin-top: 180px;
+    }
+
+    .card-info p{
+        display: none;
+    }
+}
+/* ------------------------------------------------------------------- */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+
+select:focus{
+    outline: none;
+}
+
+.page-btn{
+    margin-bottom: 80px;
+}
+
+.page-btn span{
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #ff523b;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;  
+}
+
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+}
+
+/* single-product */
+
+.single-product{
+    margin-top: 10px;
+}
+
+.single-product .col-2 img{
+    width: 100%;
+    padding: 0;
+}
+
+.single-product .col-2{
+    padding: 20px;
+}
+
+.single-product h4{
+    margin: 20px 20px 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+.single-product input:focus{
+    outline: none;
+}
+
+.single-product .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 60px;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.related-product{
+    position: relative;
+    bottom: 80px;
+}
+
+.related-product-img{
+    position: relative;
+    bottom: 80px;
+}
+
+/* ------------Card Page----------- */
+
+.card-page{
+    margin: 80px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    display: block;
+    color: #ff523b;
+    font-size: 12px;   
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
 }
